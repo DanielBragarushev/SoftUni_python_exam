@@ -1,0 +1,19 @@
+group_size = int(input())
+nights_stay = int(input())
+transport_cards = int(input())
+museum_tickets = int(input())
+
+price_per_night = 20
+transport_card_price = 1.60
+ticket = 6
+
+
+price_for_group = price_per_night * nights_stay
+transport_card = transport_cards * transport_card_price
+ticket_price = museum_tickets * ticket
+total_per_person = price_for_group + transport_card + ticket_price
+total_for_group = total_per_person * group_size
+
+total = total_for_group * 1.25
+
+print(f"{total:.2f}")
